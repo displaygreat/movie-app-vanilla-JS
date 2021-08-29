@@ -1,0 +1,116 @@
+:root {
+  --opal: #e85f5c;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#app {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+.title {
+  margin: 40px 0;
+  flex-basis: 100%;
+  text-align: center;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.input-wrap {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  margin: 0 auto 20px;
+}
+.input {
+  border: 2px solid var(--opal);
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+.submit-button {
+  display: flex;
+  margin: auto;
+  font-weight: bold;
+  background-color: var(--opal);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  justify-content: center;
+}
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 32%;
+  min-height: 400px;
+  border: 2px solid var(--opal);
+  padding: 10px;
+  margin: 8px;
+}
+
+.card-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.modal {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  transition: all 0.5s;
+}
+.modal-dialog {
+  width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 40px;
+  margin: 30px auto;
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  background-color: #fff;
+  color: var(--opal);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.close-modal:hover {
+  border: 2px solid var(--opal);
+}
+.hide {
+  display: none;
+}
